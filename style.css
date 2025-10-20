@@ -74,7 +74,6 @@ h3 {
 .header_logo {
     font-size: 1.5rem;
     margin: 20px 20px;
-    display: inline;
     color: #9b59b6;
 }
 
@@ -244,7 +243,7 @@ h3 {
 
     .fa-arrow-up {
         top: 390%;
-        left: 47%;
+        left: 45%;
     }
 }
 
@@ -255,7 +254,24 @@ h3 {
 
     .fa-arrow-up {
         top: 390%;
-        left: 47%;
+        left: 45%;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .header_ul {
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+        max-width: 420px;
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+    .header_logo {
+        display: none;
+    }
+}
+
+
 
