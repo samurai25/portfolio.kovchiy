@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESET */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input,
+button,
+label,
+textarea {
+    font: inherit;
+}
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #0d0d18;
+    font-family: 'Inter', sans-serif;
+    color: #f0f0f5;
+    text-align: center;
+    font-weight: 400;
+}
+
+a:any-link {
+    color: #f0f0f5;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #9b59b6;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+h3 {
+    color: #9b59b6; 
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    box-shadow: 0 0 25px #0d0d18;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.header_logo {
+    font-size: 1.5rem;
+    margin: 20px 20px;
+    display: inline;
+    color: #9b59b6;
+}
+
+.header_nav {
+    background-color: #0d0d18;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header_ul {
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    gap: 2rem;
+    margin: 20px;
+}
+
+.header_ul li {
+    list-style-type: none;
+}
+
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #9b59b6; */
+}
+
+
+/* HERO */ 
+
+.hero {
+    background-color: #0d0d18;
+    background-image: linear-gradient(to bottom, #0d0d18, #1a1a2e);
+    line-height: 1.5;
+}
+
+.hero h1 {
+    margin-top: 40vh;
+    font-weight: bold;
+    color: #9b59b6;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+/* PROJECTS */
+
+.projects_section h2 {
+    margin-top: 150px;
+}
+
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1rem;
+    place-content: center;
+    padding: 1rem;
+    margin-top: -200px;
+}
+
+.project {
+    background-color: #1a1a2e;
+    width: 100%;
+    min-width: 255px;
+    height: 150px;
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 0 0 20px #222;
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.project:hover {
+    box-shadow: 0 10px 20px #9b59b6;
+    bottom: 5px;
+}
+
+.project  h3 {
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* CONTACT */
+
+.contact {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.contact h2 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.contact_ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10px;
+}
+
+.contact_ul li {
+    list-style-type: none;
+}
+
+.fa-github, .fa-linkedin {
+    color: #9b59b6;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
+    color: #e4dfe6;
+    transition: color 0.5s ease-in-out;
+}
+
+.fa-arrow-up {
+    color: lightgray;
+    background-color: #9b59b6;
+    padding: 25px;
+    border-radius: 100%;
+    position: absolute;
+    top: 400%;
+    left: 94%;
+}
+
+.fa-arrow-up:hover {
+    background-color: #902bb8;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 70px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.footer p {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 840px) {
+    .projects_container {
+        margin-top: -150px;
+    }
+
+    .fa-arrow-up {
+        top: 390%;
+        left: 47%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .projects_container {
+        margin-top: -90px;
+    }
+
+    .fa-arrow-up {
+        top: 390%;
+        left: 47%;
+    }
+}
+
