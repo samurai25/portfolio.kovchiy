@@ -129,6 +129,21 @@ h3 {
     font-size: 1.3rem;
 }
 
+.hero h1, .hero p {
+    animation: fadeInHeading 1s ease-out forwards; 
+}
+
+@keyframes fadeInHeading {
+  from {
+    opacity: 0; 
+    transform: translateY(200px); 
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
 /* PROJECTS */
 
 .projects_section h2 {
