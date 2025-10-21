@@ -214,9 +214,6 @@ h3 {
     background-color: #9b59b6;
     padding: 25px;
     border-radius: 100%;
-    position: absolute;
-    top: 400%;
-    left: 94%;
 }
 
 .fa-arrow-up:hover {
@@ -240,11 +237,6 @@ h3 {
     .projects_container {
         margin-top: -150px;
     }
-
-    .fa-arrow-up {
-        top: 390%;
-        left: 45%;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -252,13 +244,6 @@ h3 {
         margin-top: -90px;
     }
 
-    .fa-arrow-up {
-        top: 390%;
-        left: 45%;
-    }
-}
-
-@media screen and (max-width: 420px) {
     .header_ul {
         justify-content: center;
         gap: 2rem;
@@ -272,6 +257,8 @@ h3 {
         display: none;
     }
 }
+
+
 
 
 
