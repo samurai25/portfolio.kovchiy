@@ -94,6 +94,7 @@ h3 {
     font-size: 1.5rem;
     gap: 2rem;
     margin: 20px;
+    z-index: 1;
 }
 
 .header_ul li {
@@ -262,6 +263,11 @@ h3 {
         margin-top: -90px;
     }
 
+    .header {
+        background-color: aquamarine;
+        height: 55px;
+    }
+
     .header_ul {
         justify-content: center;
         gap: 2rem;
@@ -269,6 +275,7 @@ h3 {
         max-width: 420px;
         margin: 20px auto;
         flex-direction: column;
+        font-size: 1.2rem;
     }
 
     .header_logo {
@@ -277,12 +284,9 @@ h3 {
 
     .header_nav {
         position: relative;
-        top: -230px;
+        top: -220px;
         transition: top 0.5s ease-in-out;
-    }
-
-    .header_nav {
-        padding-bottom: 50px;
+        padding-bottom: 55px;
     }
 
     .header_nav p {
